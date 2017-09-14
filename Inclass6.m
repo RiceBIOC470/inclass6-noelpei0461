@@ -7,6 +7,18 @@
 % function which takes your structure array of students as input and returns
 % the average age of the students. 
 
+
+%1.
+function ss=studentinfo1(x,y,z)
+students=struct('name',x,'age',y,'grade',z)
+ss=students
+end
+
+%2
+function ss1=avgage(x)
+ss1=mean([x.age]);
+end
+
 %2. In this folder, you will find an immunofluorescence image of human stem
 %cells stained for a gene called SOX2. Write a function which takes a
 %filename as input and returns a structure containing metaData. Include at
