@@ -29,3 +29,14 @@ end
 %from the camera out of this field. (Hint: it is preceded by the words
 %"Actual Temperature" which don't appear anywhere else in
 %ImageDescription). 
+%a
+function im=imginfo(I)
+x=imfinfo(I)
+a=x.BitDepth
+b=x.FileSize
+c=x.FileModDate
+cc=struct('bitdepth',a,'size',b,'date',c)
+im=cc
+end
+
+%b
